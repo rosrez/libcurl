@@ -1,0 +1,13 @@
+TEST REST SERVICE:
+
+curl --data "code=CODE&hw=HWARE&fw=FWARE&rel=RELEASE" http://pc-home:8080/resteasy-simple/enroll/init
+
+Explanation:
+
+--data indicates that curl will be using a POST method. Parameters take the following form:
+
+param1=value1&param2=value2... etc.
+
+RETURNS (Sample output):
+
+{"agentID":"Agent-1111","username":"USERname","password":"PASSword"}
